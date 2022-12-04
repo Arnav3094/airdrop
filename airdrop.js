@@ -1,6 +1,9 @@
 // npm init -y
 // npm install --save @solana/web3.js
 
+
+// LEARN ASYNC AND AWAIT
+
 const { 
     Connection, 
     LAMPORTS_PER_SOL, 
@@ -16,7 +19,7 @@ const {
   
     const airdropSignature = await connection.requestAirdrop(
       keypair.publicKey,
-      LAMPORTS_PER_SOL
+      LAMPORTS_PER_SOL = 2
     );
     
     const latestBlockHash = await connection.getLatestBlockhash();
